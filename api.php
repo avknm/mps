@@ -1,5 +1,7 @@
 include cfg.php
 include db.php
+$DB=MySqli::getInstance();
+
 $ukey=!empty($_COOKIE['uskey']) ? $_COOKIE['uskey'] : '';
 if(strlen($ukey) == 32)){
   $res=$DB->query('selset * form user_info');
