@@ -1,7 +1,10 @@
 <?php
 /*
-user_tab   id    md5   sview   fview     last
+Auser_tab   id    md5   sview   fview     last
            Ai    ukey      0       20        20200831
+
+Ruser_tab   id    name    password  sview   fview     last
+
 
 ip_tab     id    ip             last
            AI    1123131        time()
