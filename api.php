@@ -47,7 +47,7 @@ if(strlen($ukey) == 32)){
 /*
 
 user share models
-reUrl /intr/uid L ?uid=uid
+reUrl /share/uid L ?uid
 */
 $uid=!empty($_GET['uid']) ? $_GET['uid'] : '';// dechex($uid*1000)
 $uid=hexdec($uid) / 1000;
