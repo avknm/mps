@@ -9,6 +9,16 @@ Ruser_tab   id    name    password  sview   fview     last
 ip_tab     id    ip             last
            AI    1123131        time()
 
+
+
+
+http://www.layuicms.com/v2/page/login/login.html
+https://anonfiles.com/Rdicr1Mbob/M_txt
+
+
+
+
+
 */
 include cfg.php
 include db.php
