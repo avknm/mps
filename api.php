@@ -1,6 +1,21 @@
+<?php
+/*
+user_tab   id    md5   sview   fview     last
+           Ai    ukey      0       20        20200831
+
+ip_tab     id    ip             last
+           AI    1123131        time()
+
+*/
 include cfg.php
 include db.php
 $DB=MySqli::getInstance();
+
+/*
+
+check user models
+
+*/
 
 $ukey=!empty($_COOKIE['uskey']) ? $_COOKIE['uskey'] : '';
 if(strlen($ukey) == 32)){
@@ -19,36 +34,31 @@ if(strlen($ukey) == 32)){
           //loadUserTpl();
         }
       }
-      
-      
     }else{   // today one
       //updata
     }
-    
   }else{
     //add user
-  
-  
   }
-
-
-
 }else{
   //header('Loction:');
   loadUserTpl('check.php');
-
 }
+/*
 
-
-
-
-
-if new > 0{}
-
-else{
-
+user share models
+reUrl /intr/uid L ?uid=uid
+*/
+$uid=!empty($_GET['uid']) ? $_GET['uid'] : '';// dechex($uid*1000)
+$uid=hexdec($uid) / 1000;
+if($uid){
+  $ip=$GetIp();
+  $r="selset";
+  if($r){
+    //updata
+  }
 }
-
+ 
 
 
 
